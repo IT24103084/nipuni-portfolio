@@ -1,0 +1,27 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient background -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f06292;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c2185b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="450" fill="url(#bgGradient)"/>
+  
+  <!-- Heart shape -->
+  <path d="M 400 350 C 300 250, 200 200, 200 120 C 200 80, 230 50, 260 50 C 290 50, 330 70, 400 140 C 470 70, 510 50, 540 50 C 570 50, 600 80, 600 120 C 600 200, 500 250, 400 350 Z" 
+        fill="rgba(255,255,255,0.3)" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+  
+  <!-- Pulse waves -->
+  <circle cx="400" cy="320" r="80" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2"/>
+  <circle cx="400" cy="320" r="120" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Text -->
+  <text x="400" y="40" font-family="Inter, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">
+    Heart Disease Prediction
+  </text>
+  <text x="400" y="420" font-family="Inter, sans-serif" font-size="18" fill="rgba(255,255,255,0.8)" text-anchor="middle">
+    ML-powered health insights
+  </text>
+</svg>
