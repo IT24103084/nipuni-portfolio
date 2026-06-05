@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100;0,14..32,200;0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900&display=swap" rel="stylesheet" />
+    <style>
+      /* Prevent layout shift during font load */
+      body { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+      body.fonts-loaded { font-family: 'Inter', sans-serif; }
+    </style>
   </head>
   <body>
     <div id="root"></div>

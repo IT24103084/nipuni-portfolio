@@ -1,6 +1,6 @@
 // App.jsx — Root component. Assembles all sections in order.
 
-import ParticleBackground from './components/ParticleBackground'
+import { Suspense, lazy } from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 
@@ -14,11 +14,16 @@ import CareerGoals from './sections/CareerGoals'
 import CareerTimeline from './sections/CareerTimeline'
 import Contact from './sections/Contact'
 
+// Lazy load ParticleBackground to improve initial page load performance
+const ParticleBackground = lazy(() => import('./components/ParticleBackground'))
+
 export default function App() {
   return (
     <>
       {/* Animated particle canvas — fixed behind everything */}
-      <ParticleBackground />
+      <Suspense fallback={null}>
+        <ParticleBackground />
+      </Suspense>
 
       {/* Sticky navigation */}
       <Navbar />

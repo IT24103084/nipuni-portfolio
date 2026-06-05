@@ -1,14 +1,14 @@
 // ParticleBackground.jsx
 // Renders an animated particle + neural-net-line background using HTML Canvas.
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, memo } from 'react'
 
-export default function ParticleBackground() {
+function ParticleBackground() {
   const canvasRef = useRef(null)
 
   useEffect(() => {
     const canvas = canvasRef.current
-    const ctx = canvas.getContext('2d')
+    const ctx = canvas.getContext('2d', { alpha: true })
     let animId
     let particles = []
 
@@ -44,22 +44,22 @@ export default function ParticleBackground() {
       }
     }
 
-    // Create particles
-    for (let i = 0; i < 90; i++) particles.push(new Particle())
+    // Create particles - reduced from 90 to 40 for better performance
+    for (let i = 0; i < 40; i++) particles.push(new Particle())
 
-    // Draw connecting lines between nearby particles
+    // Draw connecting lines between nearby particles - optimized
     const drawLines = () => {
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const dx = particles[i].x - particles[j].x
           const dy = particles[i].y - particles[j].y
           const d = Math.hypot(dx, dy)
-          if (d < 110) {
+          if (d < 90) {
             ctx.beginPath()
             ctx.moveTo(particles[i].x, particles[i].y)
             ctx.lineTo(particles[j].x, particles[j].y)
-            ctx.strokeStyle = `rgba(124,106,247,${0.07 * (1 - d / 110)})`
-            ctx.lineWidth = 0.5
+            ctx.strokeStyle = `rgba(124,106,247,${0.04 * (1 - d / 90)})`
+            ctx.lineWidth = 0.3
             ctx.stroke()
           }
         }
@@ -88,3 +88,5 @@ export default function ParticleBackground() {
     />
   )
 }
+
+export default memo(ParticleBackground)
