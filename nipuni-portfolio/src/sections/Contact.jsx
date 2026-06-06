@@ -2,7 +2,7 @@
 
 import { useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
-import { Mail, Phone, Linkedin, Github, Send, CheckCircle } from 'lucide-react'
+import { Mail, Linkedin, Github, Send, CheckCircle } from 'lucide-react'
 import SectionTag from '../components/SectionTag'
 import { personalInfo } from '../data'
 
@@ -12,12 +12,6 @@ const contactItems = [
     label: 'Email',
     value: 'nipunikarunanayake2@gmail.com',
     href: `mailto:${personalInfo.email}`,
-  },
-  {
-    icon: <Phone size={18} />,
-    label: 'Phone',
-    value: '+94 706 488 393',
-    href: `tel:${personalInfo.phone}`,
   },
   {
     icon: <Linkedin size={18} />,
