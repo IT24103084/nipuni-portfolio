@@ -53,7 +53,7 @@ export default function LearningPath() {
           <h2 className="font-display font-extrabold text-[clamp(2rem,3.5vw,3rem)] leading-[1.1] mb-4">
             Learning <span className="text-gradient">Path</span>
           </h2>
-          <p className="text-[#9aa0b8] text-base max-w-xl leading-relaxed">
+          <p className="text-slate-700 dark:text-[#9aa0b8] text-base max-w-xl leading-relaxed">
             Continuously upskilling through industry-recognized certifications and hands-on learning platforms
           </p>
         </motion.div>
@@ -87,7 +87,7 @@ export default function LearningPath() {
               <div className="font-display font-bold text-2xl bg-gradient-to-r from-[#7c6af7] to-[#4fc3f7] bg-clip-text text-transparent mb-1">
                 {stat.value}
               </div>
-              <p className="text-[11px] text-[#616880] uppercase tracking-widest font-medium">
+              <p className="text-[11px] text-slate-600 dark:text-[#616880] uppercase tracking-widest font-medium">
                 {stat.label}
               </p>
             </motion.div>
@@ -103,7 +103,7 @@ export default function LearningPath() {
             transition={{ duration: 0.65 }}
             className="glass p-8"
           >
-            <h3 className="font-display font-bold text-lg mb-6 text-[#e8eaf6]">
+            <h3 className="font-display font-bold text-lg mb-6 text-slate-900 dark:text-[#e8eaf6]">
               Learning Platforms
             </h3>
             <div className="grid grid-cols-2 gap-3">
@@ -114,7 +114,7 @@ export default function LearningPath() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08 }}
-                  className="glass p-4 text-center text-sm font-medium text-[#e8eaf6] hover:border-[rgba(124,106,247,0.3)] transition-colors cursor-default"
+                  className="glass p-4 text-center text-sm font-medium text-slate-900 dark:text-[#e8eaf6] hover:border-[rgba(124,106,247,0.3)] transition-colors cursor-default"
                 >
                   {platform}
                 </motion.div>
@@ -130,7 +130,7 @@ export default function LearningPath() {
             transition={{ duration: 0.65, delay: 0.1 }}
             className="space-y-4"
           >
-            <h3 className="font-display font-bold text-lg text-[#e8eaf6]">
+            <h3 className="font-display font-bold text-lg text-slate-900 dark:text-[#e8eaf6]">
               Currently Learning
             </h3>
             {learningPath.currentLearning.map((learning, i) => (
@@ -144,10 +144,10 @@ export default function LearningPath() {
               >
                 <div className="flex items-start justify-between mb-3">
                   <div>
-                    <h4 className="font-display font-bold text-base text-[#e8eaf6]">
+                    <h4 className="font-display font-bold text-base text-slate-900 dark:text-[#e8eaf6]">
                       {learning.title}
                     </h4>
-                    <p className="text-xs text-[#616880] mt-1">{learning.platform}</p>
+                    <p className="text-xs text-slate-600 dark:text-[#616880] mt-1">{learning.platform}</p>
                   </div>
                   <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full flex-shrink-0 ${
                     learning.status === 'In Progress' 
@@ -168,7 +168,7 @@ export default function LearningPath() {
                     className="h-full rounded-full bg-gradient-to-r from-[#7c6af7] to-[#4fc3f7]"
                   />
                 </div>
-                <p className="text-xs text-[#9aa0b8] mt-2">{learning.progress}% completed</p>
+                <p className="text-xs text-slate-700 dark:text-[#9aa0b8] mt-2">{learning.progress}% completed</p>
               </motion.div>
             ))}
           </motion.div>
@@ -177,3 +177,4 @@ export default function LearningPath() {
     </section>
   )
 }
+

@@ -173,7 +173,7 @@ export default function Projects() {
           <h2 className="font-display font-extrabold text-[clamp(2rem,3.5vw,3rem)] leading-[1.1] mb-4">
             Featured <span className="text-gradient">Projects</span>
           </h2>
-          <p className="text-[#9aa0b8] text-base max-w-xl leading-relaxed">
+          <p className="text-slate-700 dark:text-[#9aa0b8] text-base max-w-xl leading-relaxed">
             Hands-on projects combining machine learning, full-stack development, and real-world problem solving.
           </p>
         </motion.div>
@@ -188,3 +188,4 @@ export default function Projects() {
     </section>
   )
 }
+

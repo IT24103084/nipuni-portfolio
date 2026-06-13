@@ -78,7 +78,7 @@ function SkillCategory({ category, index, isLeft }) {
               style={{ background: '#4fc3f7' }}
               whileHover={{ scale: 1.5 }}
             />
-            <span className="text-base text-[#e8eaf6] group-hover:text-[#4fc3f7] transition-colors duration-300">
+            <span className="text-base text-slate-900 dark:text-[#e8eaf6] group-hover:text-[#4fc3f7] transition-colors duration-300">
               {skill}
             </span>
           </motion.div>
@@ -161,7 +161,7 @@ function SoftSkillsSection({ isLeft }) {
               style={{ background: '#4fc3f7' }}
               whileHover={{ scale: 1.5 }}
             />
-            <span className="text-base text-[#e8eaf6] group-hover:text-[#4fc3f7] transition-colors duration-300">
+            <span className="text-base text-slate-900 dark:text-[#e8eaf6] group-hover:text-[#4fc3f7] transition-colors duration-300">
               {skill}
             </span>
           </motion.div>
@@ -219,3 +219,4 @@ export default function Skills() {
     </section>
   )
 }
+

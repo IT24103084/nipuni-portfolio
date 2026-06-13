@@ -53,7 +53,7 @@ export default function CareerGoals() {
           <h2 className="font-display font-extrabold text-[clamp(2rem,3.5vw,3rem)] leading-[1.1] mb-4">
             Career <span className="text-gradient">Goals</span>
           </h2>
-          <p className="text-[#9aa0b8] text-base max-w-xl leading-relaxed">
+          <p className="text-slate-700 dark:text-[#9aa0b8] text-base max-w-xl leading-relaxed">
             A practical roadmap focused on internship readiness and steady technical growth
           </p>
         </motion.div>
@@ -75,14 +75,14 @@ export default function CareerGoals() {
               </div>
               <div>
                 <h3 className="font-display font-bold text-lg mb-1">My Vision</h3>
-                <p className="text-xs text-[#616880] uppercase tracking-widest">Professional Path</p>
+                <p className="text-xs text-slate-600 dark:text-[#616880] uppercase tracking-widest">Professional Path</p>
               </div>
             </div>
-            <p className="text-[#e8eaf6] leading-relaxed mb-6 text-sm">
+            <p className="text-slate-900 dark:text-[#e8eaf6] leading-relaxed mb-6 text-sm">
               {careerGoals.vision}
             </p>
             <div className="pt-6 border-t border-[rgba(255,255,255,0.1)]">
-              <p className="text-[11px] text-[#616880] uppercase tracking-widest font-medium mb-4">Focus Areas</p>
+              <p className="text-[11px] text-slate-600 dark:text-[#616880] uppercase tracking-widest font-medium mb-4">Focus Areas</p>
               <div className="flex flex-wrap gap-2">
                 {careerGoals.focusAreas.map((area, i) => (
                   <motion.span
@@ -120,7 +120,7 @@ export default function CareerGoals() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center justify-between mb-2">
-                      <h4 className="font-display font-bold text-base text-[#e8eaf6]">
+                      <h4 className="font-display font-bold text-base text-slate-900 dark:text-[#e8eaf6]">
                         {milestone.title}
                       </h4>
                       <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full ${
@@ -132,7 +132,7 @@ export default function CareerGoals() {
                         {milestone.status}
                       </span>
                     </div>
-                    <p className="text-sm text-[#9aa0b8] leading-relaxed">
+                    <p className="text-sm text-slate-700 dark:text-[#9aa0b8] leading-relaxed">
                       {milestone.desc}
                     </p>
                   </div>
@@ -145,3 +145,4 @@ export default function CareerGoals() {
     </section>
   )
 }
+

@@ -44,7 +44,7 @@ function EduItem({ item, index }) {
           {item.period}
         </motion.div>
         <h3 className="font-display font-bold text-[1.08rem] mb-1">{item.degree}</h3>
-        <p className="text-sm text-[#9aa0b8] mb-3">{item.school}</p>
+        <p className="text-sm text-slate-600 dark:text-[#9aa0b8] mb-3">{item.school}</p>
         <p className="text-[0.84rem] text-[#616880] leading-relaxed mb-4">{item.desc}</p>
         <motion.span
           whileHover={{ scale: 1.05 }}
@@ -87,10 +87,10 @@ function CareerHighlightCard({ highlight, index }) {
           {['🎯', '⚙️', '🚀', '🤝'][index % 4]}
         </div>
 
-        <h4 className="font-display font-bold text-sm mb-2 text-[#e8eaf6] group-hover:text-gradient transition-all">
+        <h4 className="font-display font-bold text-sm mb-2 text-slate-900 dark:text-[#e8eaf6] group-hover:text-gradient transition-all">
           {highlight.title}
         </h4>
-        <p className="text-xs text-[#9aa0b8] leading-relaxed group-hover:text-[#b0b8d0] transition-colors">
+        <p className="text-xs text-slate-600 dark:text-[#9aa0b8] leading-relaxed group-hover:text-[#b0b8d0] transition-colors">
           {highlight.description}
         </p>
       </div>
@@ -124,7 +124,7 @@ export default function Education() {
             Education &amp;<br />
             <span className="text-gradient">Background</span>
           </h2>
-          <p className="text-[#9aa0b8] text-base leading-relaxed max-w-md">
+          <p className="text-slate-700 dark:text-[#9aa0b8] text-base leading-relaxed max-w-md">
             Building a strong academic foundation in Data Science and Information Technology at SLIIT.
           </p>
         </motion.div>

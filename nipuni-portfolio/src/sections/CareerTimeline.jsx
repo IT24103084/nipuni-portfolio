@@ -77,7 +77,7 @@ export default function CareerTimeline() {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ delay: idx * 0.15, duration: 0.4 }}
-                className="absolute left-0 top-1 w-11 h-11 rounded-full bg-gradient-to-br from-[#7c6af7] to-[#4fc3f7] flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-[rgba(124,106,247,0.3)]"
+                className="absolute left-0 top-1 w-11 h-11 rounded-full bg-gradient-to-br from-[#7c6af7] to-[#4fc3f7] flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-[rgba(124,106,247,0.3)] dark:text-white"
               >
                 {idx + 1}
               </motion.div>
@@ -90,7 +90,7 @@ export default function CareerTimeline() {
                 className="glass p-6 group hover:border-[rgba(124,106,247,0.4)] transition-all duration-300"
               >
                 <div className="flex items-start justify-between mb-2">
-                  <h3 className="font-display font-bold text-lg text-[#e8eaf6]">
+                  <h3 className="font-display font-bold text-lg text-slate-900 dark:text-[#e8eaf6]">
                     {item.title}
                   </h3>
                   <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-[linear-gradient(135deg,rgba(124,106,247,0.15),rgba(79,195,247,0.15))] text-[#4fc3f7] border border-[rgba(79,195,247,0.2)]">
@@ -98,7 +98,7 @@ export default function CareerTimeline() {
                   </span>
                 </div>
                 <p className="text-[#7c6af7] text-sm font-semibold mb-3">{item.year}</p>
-                <p className="text-[#9aa0b8] leading-relaxed text-sm">
+                <p className="text-slate-700 dark:text-[#9aa0b8] leading-relaxed text-sm">
                   {item.desc}
                 </p>
               </motion.div>

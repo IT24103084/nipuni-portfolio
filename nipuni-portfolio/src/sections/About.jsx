@@ -70,7 +70,7 @@ export default function About() {
                   {/* Avatar - Square with rounded corners */}
                   <motion.div 
                     whileHover={{ scale: 1.1 }}
-                    className="w-24 h-24 rounded-2xl flex items-center justify-center mb-6 mx-auto font-display font-extrabold text-3xl text-white"
+                    className="w-24 h-24 rounded-2xl flex items-center justify-center mb-6 mx-auto font-display font-extrabold text-3xl text-slate-900 dark:text-white"
                     style={{ background: 'linear-gradient(135deg,#7c6af7,#b06ef3)' }}
                   >
                     NK
@@ -91,8 +91,8 @@ export default function About() {
                   whileHover={{ y: -4 }}
                   className="glass glass-hover p-4 rounded-lg text-center"
                 >
-                  <p className="text-[#4fc3f7] text-xs uppercase tracking-wider mb-2 font-bold">Degree</p>
-                  <p className="text-[#e8eaf6] font-bold text-sm">BSc (Hons) Data Science</p>
+                  <p className="text-slate-600 dark:text-[#4fc3f7] text-xs uppercase tracking-wider mb-2 font-bold">Degree</p>
+                  <p className="text-slate-900 dark:text-[#e8eaf6] font-bold text-sm">BSc (Hons) Data Science</p>
                 </motion.div>
 
                 {/* Institute */}
@@ -103,8 +103,8 @@ export default function About() {
                   whileHover={{ y: -4 }}
                   className="glass glass-hover p-4 rounded-lg text-center"
                 >
-                  <p className="text-[#4fc3f7] text-xs uppercase tracking-wider mb-2 font-bold">Institute</p>
-                  <p className="text-[#e8eaf6] font-bold text-sm">SLIIT, Sri Lanka</p>
+                  <p className="text-slate-600 dark:text-[#4fc3f7] text-xs uppercase tracking-wider mb-2 font-bold">Institute</p>
+                  <p className="text-slate-900 dark:text-[#e8eaf6] font-bold text-sm">SLIIT, Sri Lanka</p>
                 </motion.div>
 
                 {/* CGPA */}
@@ -115,8 +115,8 @@ export default function About() {
                   whileHover={{ y: -4 }}
                   className="glass glass-hover p-4 rounded-lg text-center col-span-1"
                 >
-                  <p className="text-[#b06ef3] text-xs uppercase tracking-wider mb-2 font-bold">CGPA</p>
-                  <p className="text-[#e8eaf6] font-bold text-sm">3.55 / 4.0</p>
+                  <p className="text-slate-600 dark:text-[#b06ef3] text-xs uppercase tracking-wider mb-2 font-bold">CGPA</p>
+                  <p className="text-slate-900 dark:text-[#e8eaf6] font-bold text-sm">3.55 / 4.0</p>
                 </motion.div>
 
                 {/* Location */}
@@ -127,8 +127,8 @@ export default function About() {
                   whileHover={{ y: -4 }}
                   className="glass glass-hover p-4 rounded-lg text-center"
                 >
-                  <p className="text-[#4fc3f7] text-xs uppercase tracking-wider mb-2 font-bold">Location</p>
-                  <p className="text-[#e8eaf6] font-bold text-sm">Kurunegala, Sri Lanka</p>
+                  <p className="text-slate-600 dark:text-[#4fc3f7] text-xs uppercase tracking-wider mb-2 font-bold">Location</p>
+                  <p className="text-slate-900 dark:text-[#e8eaf6] font-bold text-sm">Kurunegala, Sri Lanka</p>
                 </motion.div>
 
                 {/* Focus */}
@@ -139,8 +139,8 @@ export default function About() {
                   whileHover={{ y: -4 }}
                   className="glass glass-hover p-4 rounded-lg text-center"
                 >
-                  <p className="text-[#4fc3f7] text-xs uppercase tracking-wider mb-2 font-bold">Focus</p>
-                  <p className="text-[#e8eaf6] font-bold text-sm">ML · AI · Data · Web</p>
+                  <p className="text-slate-600 dark:text-[#4fc3f7] text-xs uppercase tracking-wider mb-2 font-bold">Focus</p>
+                  <p className="text-slate-900 dark:text-[#e8eaf6] font-bold text-sm">ML · AI · Data · Web</p>
                 </motion.div>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.3 + idx * 0.1, duration: 0.6 }}
-                    className="text-[#b0b8d0] leading-[1.85] text-base lg:text-lg"
+                    className="text-slate-700 dark:text-[#b0b8d0] leading-[1.85] text-base lg:text-lg"
                   >
                     {para}
                   </motion.p>
@@ -172,7 +172,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.4, duration: 0.6 }}
               >
-                <h3 className="text-[#e8eaf6] font-display font-bold text-base mb-4">Currently focused on</h3>
+                <h3 className="text-slate-900 dark:text-[#e8eaf6] font-display font-bold text-base mb-4">Currently focused on</h3>
                 <ul className="space-y-3">
                   {[
                     'Building machine learning and AI models for real-world problems',
@@ -186,7 +186,7 @@ export default function About() {
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: 0.45 + i * 0.08, duration: 0.5 }}
-                      className="flex items-start gap-3 text-[#9aa0b8] text-sm"
+                      className="flex items-start gap-3 text-slate-700 dark:text-[#9aa0b8] text-sm"
                     >
                       <span className="text-[#4fc3f7] font-bold mt-1">▸</span>
                       <span>{item}</span>
@@ -203,7 +203,7 @@ export default function About() {
                 viewport={{ once: true }}
                 transition={{ delay: 0.65, duration: 0.6 }}
                 whileHover={{ color: '#e8eaf6' }}
-                className="text-[#4fc3f7] text-sm font-medium hover:text-[#e8eaf6] transition-colors duration-300 inline-block border-b border-[#4fc3f7] hover:border-[#e8eaf6] pb-1 pt-4"
+                className="text-[#7c6af7] dark:text-[#4fc3f7] text-sm font-medium hover:text-[#7c6af7] dark:hover:text-[#e8eaf6] transition-colors duration-300 inline-block border-b border-[#7c6af7] dark:border-[#4fc3f7] hover:border-[#7c6af7] dark:hover:border-[#e8eaf6] pb-1 pt-4"
               >
                 {personalInfo.email}
               </motion.a>

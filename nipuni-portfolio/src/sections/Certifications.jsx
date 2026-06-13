@@ -31,12 +31,12 @@ function ImagePlaceholder({ icon, title, issuer }) {
       
       <div className="relative z-10 text-center">
         <span className="text-5xl mb-3 block">{icon}</span>
-        <span className="text-sm font-semibold text-[#e8eaf6] mb-2 block">{title}</span>
-        <span className="text-xs text-[#616880]">{issuer}</span>
+        <span className="text-sm font-semibold text-slate-900 dark:text-[#e8eaf6] mb-2 block">{title}</span>
+        <span className="text-xs text-slate-600 dark:text-[#616880]">{issuer}</span>
       </div>
       
       {!isCompTIA && (
-        <span className="text-[10px] text-[#3a3f55]">Add image to /public/certificates/</span>
+        <span className="text-[10px] text-slate-500 dark:text-[#3a3f55]">Add image to /public/certificates/</span>
       )}
     </div>
   )
@@ -70,7 +70,7 @@ function CertCard({ cert, index, onOpen }) {
             {/* Hover zoom overlay */}
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-300 flex items-center justify-center">
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-white/10 backdrop-blur-sm rounded-full p-3">
-                <ZoomIn size={20} className="text-white" />
+                <ZoomIn size={20} className="text-white dark:text-white" />
               </div>
             </div>
           </>
@@ -135,7 +135,7 @@ function Lightbox({ certs, activeIndex, onClose, onPrev, onNext }) {
           className="absolute top-4 right-4 z-10 bg-white/10 hover:bg-white/20 rounded-full p-2 transition-colors"
           aria-label="Close"
         >
-          <X size={18} className="text-white" />
+          <X size={18} className="text-slate-900 dark:text-white" />
         </button>
 
         {/* Image */}
@@ -167,7 +167,7 @@ function Lightbox({ certs, activeIndex, onClose, onPrev, onNext }) {
               {cert.issuer}
             </div>
             <h3 className="font-display font-bold text-base leading-snug mb-1">{cert.title}</h3>
-            <p className="text-xs text-[#9aa0b8] leading-relaxed">{cert.desc}</p>
+            <p className="text-xs text-slate-700 dark:text-[#9aa0b8] leading-relaxed">{cert.desc}</p>
           </div>
           <div className="flex items-center gap-2 text-xs text-green-400 font-medium flex-shrink-0 mt-1">
             <CheckCircle size={13} /> Completed
@@ -183,7 +183,7 @@ function Lightbox({ certs, activeIndex, onClose, onPrev, onNext }) {
               disabled={activeIndex === 0}
               aria-label="Previous"
             >
-              <ChevronLeft size={20} className="text-white" />
+              <ChevronLeft size={20} className="text-slate-900 dark:text-white" />
             </button>
             <button
               onClick={handleNext}
@@ -191,7 +191,7 @@ function Lightbox({ certs, activeIndex, onClose, onPrev, onNext }) {
               disabled={activeIndex === certs.length - 1}
               aria-label="Next"
             >
-              <ChevronRight size={20} className="text-white" />
+              <ChevronRight size={20} className="text-slate-900 dark:text-white" />
             </button>
           </div>
         )}
@@ -265,7 +265,7 @@ export default function Certifications() {
           <h2 className="font-display font-extrabold text-[clamp(2rem,3.5vw,3rem)] leading-[1.1] mb-4">
             Certificates &amp; <span className="text-gradient">Courses</span>
           </h2>
-          <p className="text-[#9aa0b8] text-base max-w-xl leading-relaxed">
+          <p className="text-slate-700 dark:text-[#9aa0b8] text-base max-w-xl leading-relaxed">
             Completed certifications demonstrating commitment to continuous learning.
             Click any card to view the full certificate.
           </p>
@@ -286,8 +286,8 @@ export default function Certifications() {
             className="glass flex flex-col items-center justify-center text-center gap-3 py-10 px-6 min-h-[200px]"
           >
             <span className="text-3xl">🎯</span>
-            <p className="text-sm text-[#9aa0b8] italic">More certifications in progress…</p>
-            <p className="text-xs text-[#616880]">Always learning · Always growing</p>
+            <p className="text-sm text-slate-700 dark:text-[#9aa0b8] italic">More certifications in progress…</p>
+            <p className="text-xs text-slate-700 dark:text-[#616880]">Always learning · Always growing</p>
           </motion.div>
         </div>
 
