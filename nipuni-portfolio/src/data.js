@@ -251,6 +251,15 @@ export const certifications = [
     certId: 'DL 12512',
     image: '/certificates/sliit-deans-y2s1.jpg',
   },
+  {
+    icon: '⭐',
+    issuer: 'Simplilearn',
+    title: "Introduction to Data Science",
+    desc: 'Foundational course covering statistics, data analysis fundamentals, and an introduction to machine learning concepts within the data science workflow.',
+    issued: '2026',
+    certId: '10350175',
+    image: '/certificates/simplilearn_certificate.jpg',
+  },
 ]
 
 export const education = [
