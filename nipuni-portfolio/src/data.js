@@ -189,6 +189,29 @@ export const projects = [
     tech: ['Java', 'Spring Boot', 'HTML/CSS/JS', 'MongoDB'],
     github: 'https://github.com/IT24103084/AutoCarePro',
   },
+
+  {
+  id: 6,
+  icon: '📊',
+  iconBg: 'rgba(79,195,247,0.12)',
+  iconBorder: 'rgba(79,195,247,0.2)',
+  title: 'Sri Lankan Job Market Analysis & Job Category Prediction System',
+  description:
+    'An end-to-end job market analysis system built by scraping real-world job vacancy data from Sri Lankan job portals. Performed data cleaning, feature engineering, and EDA using Pandas with data stored in SQLite. Built interactive dashboards using Power BI and Streamlit to visualize job trends by category, company, and region. Trained a TF-IDF + Scikit-learn text classification model to predict job categories from job titles, achieving approximately 91% accuracy.',
+  timeline: '2026',
+  image: '/projects/job-market.jpg',
+  features: [
+    'Web scraping of real-world Sri Lankan job portal data',
+    'EDA and feature engineering using Pandas and SQLite',
+    'Interactive dashboards built with Power BI and Streamlit',
+    'TF-IDF + Scikit-learn job category prediction with ~91% accuracy',
+  ],
+  tech: ['Python', 'Pandas', 'Scikit-learn', 'Streamlit', 'Power BI', 'SQLite', 'BeautifulSoup', 'Plotly'],
+  github: 'https://github.com/IT24103084/SriLankan-Job-Market-Analysis',
+  demo: 'https://srilankan-job-market-analysis-wkttaamsxc2crcrpsuh76u.streamlit.app/',
+},
+
+
 ]
 
 export const certifications = [
@@ -260,6 +283,17 @@ export const certifications = [
     certId: '10350175',
     image: '/certificates/simplilearn_certificate.jpg',
   },
+  {
+    icon: '⭐',
+    issuer: 'Microsoft',
+    title: "Power BI for Beginners",
+    desc: 'An introductory course on Microsoft Power BI covering data visualization, dashboard creation, and basic data modeling techniques for turning raw data into actionable business insights.',
+    issued: '2026',
+    certId: '10397020',
+    image: '/certificates/PowerBI_certificate.jpg',
+  },
+
+
 ]
 
 export const education = [
